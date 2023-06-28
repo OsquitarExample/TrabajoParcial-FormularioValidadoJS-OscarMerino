@@ -1,0 +1,217 @@
+/* Estilo Global */
+
+*{
+    font-family: Segoe UI, Tahoma, sans-serif;
+    font-size: 1.1em;
+    color: #1c1c1c;
+    box-sizing: border-box
+}
+
+
+/* Estilo Body */
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(circuit-board-black-background_29654-182.avif);
+    background-attachment: fixed;
+}
+
+/*Contacto por Encabezado*/
+#ContactoWA {
+    width: 64px;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    
+}
+
+
+/*Estilo Encabezado*/
+header {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:#fffae6;
+    background-color: #24231f;
+    background-image:url(Banner\ 13.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+/* Estilo Titulo */
+h1{
+    font-size: 3em;
+    font-family:'Press Start 2P', cursive;
+    margin: 0px;
+    text-align:center;
+    color: #069ada;
+}
+
+/* Estilo Titulo para Formulario */
+#CrearCuenta{
+    font-size: 1.5em;
+    font-family: 'Electrolize', sans-serif;
+    color:darkcyan;   
+}
+
+
+/* Estilo Subtitulo */
+h2{
+    font-size: 1.5em;
+    font-family:'Press Start 2P', cursive;
+    color:darkcyan;   
+}
+
+/* Estilo Subtitulo de Encabezado */
+header > h2{
+    text-align: center;
+    font-family:'Electrolize', sans-serif;
+    margin: 0px;
+    margin-top: 30px;
+    color: #069ada;
+}
+
+/* Estilo Texto Navegador */
+#GamingStore {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#InicioyRegistrate {
+    font-family: 'Electrolize', sans-serif;
+}
+
+/* Estilo Texto Carrito de Compras */
+#carritofont {
+    font-family: 'Electrolize', sans-serif;
+}
+
+/*texto Genero*/
+.Generos {
+    color: #069ada;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+/*Articulo*/
+article {
+    max-width: 23%;
+    min-width: 280px;
+    display: inline-block;
+    border: #006CA9 2px solid;
+    margin: 20px 7px 0px;
+
+}
+
+/*Escala de la Imagem*/
+.imgProduct{
+    width:100%;
+}
+
+/*Titulo de los Articulos*/
+article > h3 {
+    color: #1c1c1c;
+    padding-top: 6px;
+}
+
+/*Estilo Precio Original*/
+.precioOriginal{
+    text-decoration: line-through red;
+}
+
+/*Estilo Precio Descuento*/
+.precioDescuento {
+    color: #78A4BF;
+    font-weight: 500;
+}
+
+/*Estilo Precio Final*/
+.precioFinal {
+    color: #006CA9;
+    font-weight: bold;
+}
+
+/*Estilo Boton de Articulos*/
+article > button {
+    margin-bottom:20px;
+    font-size: 1em;
+    padding: 5px 15px;  
+}
+
+/*Carrito de Compra*/
+#CarritoVacio{
+    width: 300px;
+
+}
+
+/*Para que cambie el color al pasar por el articulo*/
+article:hover{
+    border: #93EAF2 2px solid;
+}
+
+/*Para que cambie el color del boton al pasar por el articulo*/
+article>button:hover{
+    background-color: #000000;
+    color: #fffae6;
+}
+
+
+/*Pie de Página*/
+footer{
+    background-color: #000000;
+    color: #069ada;
+    text-align: center;
+    font-family:'Electrolize', sans-serif;
+}
+
+
+/*Estilo Catalogo Body*/
+.pageCatalogo {
+    max-width: 1620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 3px ;
+    background-color: #f9f2dd;
+    text-align: center;
+}
+
+
+/* Estilo Formulario */
+.pageform {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fffae6;
+    padding: 40px;
+}
+
+.RegistroUsuario{
+    background-color:#f9f2dd ;
+}
+
+
+/*Elementos de Formulario*/
+label {display:block}
+
+form#formCreateAccount > div {margin-bottom: 20px;}
+
+div > input [type="text"], div > input [type="tel"], div > input [type="email"], div > input [type="password"] {
+    padding: 5px;
+}
+
+.formElement
+{width: 98%;}
+
+/*Terminos y Condiciones*/
+#TyC {
+    font-size: 15px;
+}
+
+#CheckSize {
+    size: 5px;
+}
+
+

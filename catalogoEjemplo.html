@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatalogoExample</title>
+    <!-- Agregar el Estilo Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Hoja de Estilo-->
+    <link rel="stylesheet" href="custom.css">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Logo de WhatsApp-->
+    <div>
+        <a target="_blank" href="https://wa.me/51944034777?text=Hola">
+        <img id="ContactoWA" src="WhatsApp.svg.png" alt="Contacto por Whatsapp">
+        </a>
+    </div>
+
+    <!--Encabezado-->
+    <header>
+        <h1>Gaming Store</h1> <!--Titulo 1-->
+        <h2>De Gamers Para Gamers</h2> <!--Titulo 2-->
+
+    </header>
+
+    <!--Barra de Menu-->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+        <div class="container-fluid">
+            <a id="GamingStore" class="navbar-brand" href="#">Gaming Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="InicioyRegistrate" class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="InicioyRegistrate" class="nav-link" href="Formulario.html">Registrate</a>
+                    </li>
+                </ul>
+                <div class="d-flex" role="search">
+                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal Carrito -->
+<div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 id="carritofont" class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="carrito">
+          <img id="CarritoVacio" class="img-fluid mx-auto d-block" src="carritoVacioAzul.png">
+          <figcaption class="text-center"> Actualmente no cuenta con ningun producto</figcaption>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary disabled">Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <main class="pageCatalogo">
+
+        <!--Sección Aventura-->
+        <section id="Acción y Aventura">
+            <h2 class="Generos">Acción y Aventura</h2>
+
+            <!-- Articulo 01 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="productos/Uncharted Aventura.jpg" alt="Uncharted 4">
+
+                <h3>Uncharted 4</h3>
+                <p>
+                    <span class="precioOriginal">S/ 149.00</span> <span class="precioDescuento">-40%</span>
+                    <br><span class="precioFinal">S/ 87.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 02 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="productos/Minecraft Dungeons Aventura.jpg" alt="Minecraft Dungeons">
+
+                <h3>Minecraft Dungeons</h3>
+                <p>
+                    <span class="precioOriginal">S/ 90.00</span> <span class="precioDescuento">-16%</span>
+                    <br><span class="precioFinal">S/ 75.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 03 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="productos/Red Dead Redemption Aventura.jpg" alt="Read Dead Redemption 2">
+
+                <h3>Red Dead Redemption 2</h3>
+                <p>
+                    <span class="precioOriginal">S/ 210.00</span> <span class="precioDescuento">-60%</span>
+                    <br><span class="precioFinal">S/ 84.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+        </section>
+
+
+        <!-- Sección Terror-->
+        <section id="Terror">
+            <h2 class="Generos">Terror</h2>
+
+            <!-- Articulo T01 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Outlast Terror.jpg" alt="Outlast">
+
+                <h3>Outlast</h3>
+                <p>
+                    <span class="precioOriginal">S/ 30.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 15.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo T02 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Silent Hill PT Terror.jpg" alt="Silent Hill PT">
+
+                <h3>Silent Hill P.T.</h3>
+                <p>
+                    <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-40%</span>
+                    <br><span class="precioFinal">S/ 36.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo T03 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Left 500 x500.jpg" alt="Left 4 Dead 2">
+
+                <h3>Left 4 Dead 2</h3>
+                <p>
+                    <span class="precioOriginal">S/ 30.00</span> <span class="precioDescuento">-70%</span>
+                    <br><span class="precioFinal">S/ 9.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+        </section>
+
+        <!--Sección Deportes-->
+        <section id="Deportes">
+            <h2 class="Generos">Deportes</h2>
+
+            <!-- Articulo D01 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Fifa 500x500 real.jpg" alt="Fifa 23">
+
+                <h3>FIFA 23</h3>
+                <p>
+                    <span class="precioOriginal">S/ 260.00</span> <span class="precioDescuento">-20%</span>
+                    <br><span class="precioFinal">S/ 208.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo D02 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/F1 Deportes.jpg" alt="Formula 1 2019">
+
+                <h3>F1 2019</h3>
+                <p>
+                    <span class="precioOriginal">S/ 100.00</span> <span class="precioDescuento">-20%</span>
+                    <br><span class="precioFinal">S/ 80.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo D03 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/NBA 2K23.jpg" alt="NBA 2K23">
+
+                <h3>NBA 2K23</h3>
+                <p>
+                    <span class="precioOriginal">S/ 160.00</span> <span class="precioDescuento">-35%</span>
+                    <br><span class="precioFinal">S/ 104.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+        </section>
+
+        <!--Sección RPGs-->
+        <section id="RPG">
+            <h2 class="Generos">RPG</h2>
+
+            <!-- Articulo R01 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Dark Souls RPG.jpg" alt="Dark Souls II">
+
+                <h3>Dark Souls II</h3>
+                <p>
+                    <span class="precioOriginal">S/ 190.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 95.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+            <!-- Articulo R02 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Bloodhorne RPG.jpg" alt="Bloodhorne">
+
+                <h3>Bloodhorne</h3>
+                <p>
+                    <span class="precioOriginal">S/ 30.00</span> <span class="precioDescuento">-20%</span>
+                    <br><span class="precioFinal">S/ 24.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+            <!-- Articulo R03 -->
+            <article class="col—3">
+
+                <img class="imgProduct" src="Productos/Elden Ring.jpg" alt="Elden Ring">
+
+                <h3>Elden Ring</h3>
+                <p>
+                    <span class="precioOriginal">S/ 95.00</span> <span class="precioDescuento">-15%</span>
+                    <br><span class="precioFinal">S/ 80.00</span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+
+            </article>
+        </section>
+    </main>
+
+    <!--Pie de Página-->
+    <footer>
+        Creado por Foxcar Studios
+    </footer>
+
+    <!--Codigo JavaScript Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <!--Javascript del Proyecto-->
+    <script src="Javascript/JS/main.js"> </script>
+
+</body>
+
+</html>
